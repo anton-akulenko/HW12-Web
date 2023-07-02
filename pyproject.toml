@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hw10-web"
+version = "0.1.0"
+description = ""
+authors = ["anton-akulenko <anton.htl@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw10_web"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = {extras = ["email"], version = "^1.10.10"}
+fastapi = "^0.98.0"
+sqlalchemy = "^2.0.17"
+alembic = "^1.11.1"
+psycopg2 = "^2.9.6"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+libgravatar = "^1.0.4"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
+bcrypt = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
